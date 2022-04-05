@@ -1,6 +1,6 @@
 # Python Technical Challenge
 
-# executar testes
+# Executar testes
 
 Na raíz do projeto, executar:
 
