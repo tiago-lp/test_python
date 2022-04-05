@@ -1,5 +1,18 @@
 # Python Technical Challenge
 
+# executar testes
+
+Na raíz do projeto, executar:
+
+```sh
+    python -m unittest test/test*
+```
+
+ou
+
+```sh
+    python3 -m unittest test/test*
+```
 
 ## Question 1
 

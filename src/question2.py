@@ -1,5 +1,16 @@
 class Orders:
     def combine_orders(self, requests, n_max):
+        """Calcula a quantidade mínima de viagens necessárias
+        para transportar requisições, agrupadas em no máximo 2, que somado os valores
+        atinja no máximo o número do parâmetro n_max.
+
+        Parameters:
+        requests (list): Lista de requisições com valores inteiros.
+        n_max (int): Valor máximo permitido por viagem.
+
+        Returns:
+        int: Número mínimo de viagens necessárias para transportar toda a lista.
+        """
         travels = 0
         requests_size = len(requests)
         if requests_size > 0:
