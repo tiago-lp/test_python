@@ -1,20 +1,16 @@
 import unittest
-
+from src.question2 import Orders
 class TestStringMethods(unittest.TestCase):
 
-    def test_upper(self):
-        self.assertEqual('foo'.upper(), 'FOO')
+    def setUp(self):
+        self.orders_obj = Orders()
 
-    def test_isupper(self):
-        self.assertTrue('FOO'.isupper())
-        self.assertFalse('Foo'.isupper())
-
-    def test_split(self):
-        s = 'hello world'
-        self.assertEqual(s.split(), ['hello', 'world'])
-        # check that s.split fails when the separator is not a string
-        with self.assertRaises(TypeError):
-            s.split(2)
+    def test_example(self):
+        orders = [70, 30, 10]
+        n_max = 100
+        how_many = self.orders_obj.combine_orders(orders, n_max)
+        expected_orders = 2
+        self.assertEqual(how_many, expected_orders, 'should be equal')
 
 if __name__ == '__main__':
     unittest.main()
