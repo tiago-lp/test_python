@@ -50,5 +50,6 @@ class TestContracts(unittest.TestCase):
         expected_open_contracts = [3, 6, 2]
         self.assertEqual(actual_open_contracts, expected_open_contracts, 'should be equal')
 
+
 if __name__ == '__main__':
     unittest.main()
