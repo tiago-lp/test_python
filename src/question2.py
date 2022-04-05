@@ -21,7 +21,7 @@ class Orders:
                 current_request = requests[i]
 
                 if last_request is None:
-                    traves += 1
+                    travels += 1
                     last_request = current_request
                     continue
                 if last_request + current_request <= n_max:
